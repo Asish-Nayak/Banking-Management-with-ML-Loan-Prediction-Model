@@ -1,15 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 16 20:08:50 2022
-
-@author: ADMIN
-"""
 
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr  4 11:35:18 2022
 
-@author: ADBMS-LAB PROJECT GROUP (ASISH,HARIGARAN,SUSHANTA)
+@author:ASISH
 """
 
 
