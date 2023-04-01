@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
 """
 Created on Mon Apr  4 14:14:37 2022
-
-@author:ADBMS-LAB PROJECT GROUP (ASISH,HARIGARAN,SUSHANTA)
+@author:ASISH
 """
 import pandas as pd
 import seaborn as sns
@@ -15,10 +13,8 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
-
-
-
-df=pd.read_csv(r'C:\Users\ADMIN\Desktop\MBA - BA II\Advanced DBMS LAB\project_ADBMS LAB\dataset\data_set.csv')
+#######################################################################
+df=pd.read_csv(r'data_set.csv')
 df.head()
 
 #drop the null value
@@ -188,21 +184,6 @@ print("Random Forest Accuracy:  {:.2f}%".format(acRF*100))
 
 
 
-#--------------------------------------------------------------------------------------------------
-compare = pd.DataFrame({'Model': ['Logistic Regression','SVM','Decision Tree','Random Forest'], 
-                        'Accuracy': [acLR*100,auSV*100,acDT*100,acRF*100]})
-compare
-
-
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#save the model
-
-##create a pickle file
-import pickle
-pickle_out =open('LG.pkl','wb')
-pickle.dump(lr1,pickle_out)
-pickle_out.close()
 
 
 
